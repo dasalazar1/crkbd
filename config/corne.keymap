@@ -33,21 +33,21 @@
    &kp LSHFT       &kp Z &kp X &kp C    &kp V  &kp B        &kp N  &kp M      &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                                &kp RALT &mo 1  &kp RET      &mo 2  &kp SPACE  &kp LGUI
                         >;
-                        sensor-bindings = <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
+                        sensor-bindings = <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC  |  1    |  2  |  3    |  4     |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
 // |  F1   |  F2   |  F3 |  F4   |  F5    |  F6 |   |  F7 |  UP |  F8 | F9  | F10 | F11  |
-// | SHFT  |       |FZone|P Desk | N Desk |Mute |   | LFT | DWN | RGT |     |     | F12  |
+// | SHFT  |       |FZone|P RApp | N RApp |Mute |   | LFT | DWN | RGT |     |     | F12  |
 //                       | ALT   |        | ENT |   |     | SPC | GUI |
                         bindings = <
    &kp ESC     &kp N1       &kp N2            &kp N3           &kp N4              &kp N5            &kp N6    &kp N7     &kp N8    &kp N9  &kp N0    &kp BSPC
    &kp F1      &kp F2       &kp N3            &kp F4           &kp F5              &kp F6            &kp F7    &kp UP     &kp F8    &kp F9  &kp F10   &kp F11 
-   &kp LSHFT   &none        &kp LG(LS(GRAVE)) &kp LG(LC(LEFT)) &kp LG(LC(RIGHT))   &kp LG(LS(A))     &kp LEFT  &kp DOWN   &kp RIGHT &kp DOT &none     &kp F12
+   &kp LSHFT   &none        &kp LG(LS(GRAVE)) &kp LA(PG_UP)    &kp LA(PG_DN)       &kp LG(LS(A))     &kp LEFT  &kp DOWN   &kp RIGHT &kp DOT &none     &kp F12
                                               &kp RALT         &none               &kp RET           &none     &kp SPACE  &kp LGUI
                         >;
-                        sensor-bindings = <&inc_dec_kp LA(PG_UP) LA(PG_DN)>;
+                        sensor-bindings = <&inc_dec_kp C_AL_PREV_TASK C_AL_NEXT_TASK>;
                 };
 
                 raise_layer {
@@ -62,7 +62,7 @@
    &none       &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4        &kp UNDER &kp PLUS  &kp BSLH        &kp LBKT &kp RBKT  &kp TILDE
                                           &kp RALT     &none        &kp RET             &none     &kp SPACE &kp LGUI
                         >;
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
                 };
         };
 };
