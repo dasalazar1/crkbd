@@ -47,7 +47,7 @@
    &kp LSHFT   &none        &kp LG(LS(GRAVE)) &kp LA(PG_UP)    &kp LA(PG_DN)       &kp LG(LS(A))     &kp LEFT  &kp DOWN   &kp RIGHT &kp DOT &none     &kp F12
                                               &kp RALT         &none               &kp RET           &none     &kp SPACE  &kp LGUI
                         >;
-                        sensor-bindings = <&inc_dec_kp C_AL_PREV_TASK C_AL_NEXT_TASK>;
+                        sensor-bindings = <&inc_dec_kp K_UNDO K_REDO>;
                 };
 
                 raise_layer {
