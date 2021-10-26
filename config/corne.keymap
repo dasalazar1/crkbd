@@ -41,8 +41,8 @@
 // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
 //                    | ALT | LWR | ENT |   | RSE | SPC  | GUI |
                         bindings = <
-   &kp F9  &kp F10 &kp F11 &kp F12 &kp LC(C)          &none &kp N7  &kp N8  &kp N9 &kp PSCRN 
-   &kp F5  &kp F6  &kp F7  &kp F8  &kp LC(V)          &none &kp N4  &kp N5  &kp N6 &none
+   &kp F9  &kp F10 &kp F11 &kp F12 &kp LC(C)          &none &kp N7  &kp N8  &kp N9 &kp DEL 
+   &kp F5  &kp F6  &kp F7  &kp F8  &kp LC(V)          &none &kp N4  &kp N5  &kp N6 &kp PSCRN
    &kp F1  &kp F2  &kp F3  &kp F4  &kp LG(LS(A))      &none &kp N1  &kp N2  &kp N3 &none 
                      &none  &none  &kp RET            &none &kp N0  &kp BSPC
                         >;
@@ -55,9 +55,9 @@
 // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
 //                    | ALT | LWR | ENT |   | RSE | SPC  | GUI |
                         bindings = <
-   &none &none &none &none &none        &kp CARET &kp AMPS  &kp STAR &kp LPAR &kp RPAR   
-   &none &none &none &none &none        &kp MINUS &kp EQUAL &kp PIPE &kp LBRC &kp RBRC
-   &none &none &none &none &none        &kp UNDER &kp PLUS  &kp BSLH &kp LBKT &kp RBKT
+   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT        &kp CARET &kp AMPS  &kp STAR &kp LPAR &kp RPAR   
+   &none    &none  &none    &none    &kp GRAVE        &kp MINUS &kp EQUAL &kp PIPE &kp LBRC &kp RBRC
+   &none    &none  &none    &none    &kp TILDE        &kp UNDER &kp PLUS  &kp BSLH &kp LBKT &kp RBKT
            &none  &none  &kp RET        &none  &kp SPACE  &kp FSLH
                         >;
                 };
@@ -69,9 +69,9 @@
 // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
 //                    | ALT | LWR | ENT |   | RSE | SPC  | GUI |
                         bindings = <
-   &none         &none        &none        &none        &none                &none     &kp LG(LS(LEFT))  &kp UP        &kp LG(LS(RIGHT)) &none  
+   &none         &none        &none        &none        &none                &none     &kp LG(LC(LEFT))  &kp UP        &kp LG(LC(RIGHT)) &none  
    &none         &none        &none        &out OUT_USB &out OUT_BLE         &none     &kp LEFT          &kp DOWN      &kp RIGHT         &none
-   &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4         &kp C_PP  &kp C_VOL_DN      &kp K_VOL_UP  &kp K_MUTE        &none
+   &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4         &kp C_PP  &kp C_VOL_DN      &kp C_VOL_UP  &kp C_MUTE        &none
                                                &none  &none  &kp RET         &none  &kp SPACE  &kp FSLH
                         >;
                 };
