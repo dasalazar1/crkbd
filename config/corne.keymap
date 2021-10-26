@@ -5,7 +5,7 @@
 
 
 &mt {
-    tapping-term-ms = <700>;
+    tapping-term-ms = <400>;
 };
 
 / {
