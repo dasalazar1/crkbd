@@ -5,6 +5,7 @@
  */
 
 #include "corne.dtsi"
+#include <dt-bindings/zmk/trackball_pim447.h>
 
 &kscan0 {
 	col-gpios
@@ -23,4 +24,15 @@
 
 &left_encoder {
     status = "okay";
+};
+
+&i2c1  {
+	status = "okay";
+
+	trackball_pim447@a {
+		compatible = "pimoroni,trackball_pim447";
+		reg = <0xa>;
+		label = "TRACKBALL_PIM447";
+		mode = <0>;
+	};
 };
