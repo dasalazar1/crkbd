@@ -24,7 +24,7 @@
             };
             combo_BSPC {
                 timeout-ms = <50>;
-                key-positions = <8 9>;
+                key-positions = <7 8>;
                 bindings = <&kp BSPC>;
             };
             combo_ESC {
@@ -52,14 +52,14 @@
                 compatible = "zmk,behavior-mod-morph";
                 label = "qtab";
                 #binding-cells = <0>;
-                bindings = <&kp Q>, <&kp TAB>;
+                bindings = <&kp Q>, <&kp LS(TAB)>;
                 mods = <(MOD_LALT)>;
             };
             estab: estab_mod {
                 compatible = "zmk,behavior-mod-morph";
                 label = "estab";
                 #binding-cells = <0>;
-                bindings = <&kp E>, <&kp LS(TAB)>;
+                bindings = <&kp E>, <&kp TAB>;
                 mods = <(MOD_LALT)>;
             };
         };
