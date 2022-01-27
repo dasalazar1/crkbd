@@ -12,7 +12,7 @@
 / {
         combos {
             compatible = "zmk,combos";
-            combo_esc {
+            combo_btclr {
                 timeout-ms = <500>;
                 key-positions = <2 3 4>;
                 bindings = <&bt BT_CLR>;
